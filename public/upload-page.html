@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <title>DeepCheck Upload</title>
+    <link rel="icon" href="DeepCheckLogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <nav class="navbar">
+        <div class="imageflex">
+            <img src="DeepCheckLogo.png" id="title" class="deepchecklogo"></img>
+            <p class="imageflexcontent">DeepCheck</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/upload">Upload</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <div class="main1">
+        <div class="hero">
+            <h1>Upload to DeepCheck AI</h1>
+            <p>Select a file to upload (.wav, .mp4)</p>
+
+            <!-- File Upload Section -->
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label class="file-label" for="file">Choose File</label>
+                <input type="file" name="file" id="file" required>
+                <div class="file-name" id="fileName"></div>
+                <br><br>
+                <button class="upload-btn" type="submit">Upload</button>
+            </form>
+
+            <!-- Result Display -->
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by DeepCheck AI</p>
+    </footer>
+
+    <script src="uploadScript.js"></script>
+</body>
+</html>
